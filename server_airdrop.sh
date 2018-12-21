@@ -11,4 +11,4 @@ MYUSER=user
 MYSERVER=yourserver.com
 
 # Magic happens here (Normally you shouldn't need to touch this)
-scp -P 1105 -r $(find ~/. -type d -name "server_airdrop") $MYUSER@$MYSERVER:~
+scp -P $PORT -r $(find ~/. -type d -name "server_airdrop") $MYUSER@$MYSERVER:~
